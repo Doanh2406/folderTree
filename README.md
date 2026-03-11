@@ -3,7 +3,13 @@
 This project stores hierarchical folders using the **Materialized Path** pattern.
 
 Each folder stores its full path from the root in the `path` column.
+### folders
 
+| Column | Type | Description |
+|------|------|-------------|
+| id | bigint | Folder ID |
+| name | string | Folder name |
+| path | string | Full path from root |
 Example:
 
 id | name | path
