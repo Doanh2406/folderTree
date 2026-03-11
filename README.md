@@ -20,3 +20,32 @@ SELECT *
 FROM folders
 WHERE path LIKE '1/2/%'
 ORDER BY path;
+
+
+### Endpoint: GET /folders/:id
+
+### Response
+
+```json
+{
+  "id": 2,
+  "name": "Folder A",
+  "children": [
+    {
+      "id": 4,
+      "name": "Folder A1",
+      "children": [
+        {
+          "id": 8,
+          "name": "Folder A1-1",
+          "children": []
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Folder A2",
+      "children": []
+    }
+  ]
+}
